@@ -2,6 +2,26 @@
   "Declare Strict Types": {
     "prefix": ["dect"],
     "body": ["declare(strict_types=1);"],
-    "description": "Declare strict types for php."
-  }
+    "description": "Declare strict types for PHP."
+  },
+  "PHP Structured Class": {
+    "prefix": ["tclass"],
+    "body": [
+        "class $1",
+        "{",
+        "    $2",
+        "}"
+      ],
+      "description": "PHP Structured Class"
+  },
+  "PHP Public Function": {
+    "prefix": ["pubf"],
+    "body": [
+        "public function ($1): $2",
+        "{",
+        "    $3",
+        "}"
+      ],
+      "description": "PHP Public Function"
+  },
 }
