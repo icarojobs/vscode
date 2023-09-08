@@ -1,0 +1,35 @@
+[
+    {
+        "key": "cmd+t cmd+l",
+        "command": "-phpunit.rerun",
+        "when": "editorTextFocus && editorLangId == 'php'"
+    },
+    {
+        "key": "cmd+t cmd+s",
+        "command": "-phpunit.run-all"
+    },
+    {
+        "key": "cmd+t",
+        "command": "-workbench.action.showAllSymbols"
+    },
+    {
+        "key": "cmd+t cmd+f",
+        "command": "-phpunit.run-file",
+        "when": "editorTextFocus && editorLangId == 'php'"
+    },
+    {
+        "key": "cmd+t cmd+t",
+        "command": "-phpunit.run-test-at-cursor",
+        "when": "editorTextFocus && editorLangId == 'php'"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+shift+[BracketLeft]",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    }
+]
