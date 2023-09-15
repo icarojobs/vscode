@@ -1,6 +1,9 @@
 # VSCODE SETTINGS
 The Tio Jobs .vscode custom settings for MacOS
 
+### SYSTEM REQUIREMENTS
+ - PHP 8.x (out of Docker)
+
 ### CHANGING YOUR BASH
 I'm using ZSH in MacOS, so, in my case, I need change my .zshrc like this:
 ```
@@ -13,7 +16,7 @@ After that, save and reload your terminal using `source ~/.zshrc`
 ### INSTALLING TIO JOBS EXTENSIONS
 To install my all extensions, just type this on terminal, in your root project folder (after `setcode` command):
 ```bash
-cat .vscode/extensions/vs_code_extensions_list.txt | xargs -n 1 code --install-extension
+php .vscode/extensions/install.php
 ```
 
 
