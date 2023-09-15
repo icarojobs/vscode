@@ -13,13 +13,13 @@ After that, save and reload your terminal using `source ~/.zshrc`
 ### INSTALLING TIO JOBS EXTENSIONS
 To install my all extensions, just type this on terminal, in your root project folder (after `setcode` command):
 ```bash
-cat extensions/vs_code_extensions_list.txt | xargs -n 1 code --install-extension
+cat .vscode/extensions/vs_code_extensions_list.txt | xargs -n 1 code --install-extension
 ```
 
 
 ### UPDATING EXTENSIONS LIST
 ```bash
-code --list-extensions >> extensions/vs_code_extensions_list.txt
+code --list-extensions >> .vscode/extensions/vs_code_extensions_list.txt
 ```
 
 ### APPLYING SETTINGS
