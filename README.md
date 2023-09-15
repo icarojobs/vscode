@@ -13,6 +13,12 @@ alias setcode="rm -rf .vscode && git clone https://github.com/icarojobs/vscode .
 
 After that, save and reload your terminal using `source ~/.zshrc`
 
+### APPLYING SETTINGS
+Open your project using `code .` then type in your terminal:
+```bash
+setcode
+```
+
 ### INSTALLING TIO JOBS EXTENSIONS
 To install my all extensions, just type this on terminal, in your root project folder (after `setcode` command):
 ```bash
@@ -23,12 +29,6 @@ php .vscode/extensions/install.php
 ### UPDATING EXTENSIONS LIST
 ```bash
 code --list-extensions >> .vscode/extensions/vs_code_extensions_list.txt
-```
-
-### APPLYING SETTINGS
-Open your project using `code .` then type in your terminal:
-```bash
-setcode
 ```
 
 Enjoy it!
