@@ -1,5 +1,5 @@
-# vscode
-The Tio Jobs .vscode custom settings
+# VSCODE SETTINGS
+The Tio Jobs .vscode custom settings for MacOS
 
 ### CHANGING YOUR BASH
 I'm using ZSH in MacOS, so, in my case, I need change my .zshrc like this:
@@ -17,3 +17,17 @@ setcode
 ```
 
 Enjoy it!
+
+### THE MOST IMPORTANTS SHORTCUTS
+ - Open 2 last recent files from history: `ctrl+shift+tab`
+ - Open all recent files: `shift shift`
+ - Open other project: `ctrl+q`
+ - Find and replace: `ctrl+r`
+ - Find in current file: `cmd+f`
+ - Find in whole project: `cmd+shift+f`
+ - Increase zoom in workspace: `cmd+=`
+ - Decrease zoom in workspace: `cmd+-`
+ - Increase/Decrease zoom in current file: `cmd+mouse scrool up/down`
+ - Open/Close Terminal: `cmd+t`
+ - Clear terminal: `ctrl+l`
+ - Create new terminal: `ctrl+cmd+t`
