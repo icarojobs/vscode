@@ -533,7 +533,7 @@
   },
   {
     "command": "workbench.action.openRecent",
-    "key": "ctrl+e",
+    "key": "ctrl+q",
     "when": "!inQuickOpen"
   },
   {
