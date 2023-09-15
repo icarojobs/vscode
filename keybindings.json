@@ -425,15 +425,15 @@
   },
   {
     "command": "workbench.action.showCommands",
-    "key": "shift+ctrl+a"
+    "key": "shift+cmd+[BracketLeft]"
   },
   {
     "command": "workbench.action.showAllSymbols",
     "key": "ctrl+n"
   },
   {
-    "command": "workbench.action.quickOpen",
-    "key": "shift+ctrl+n"
+    "key": "shift shift",
+    "command": "workbench.action.quickOpen"
   },
   {
     "command": "editor.action.goToImplementation",
@@ -580,7 +580,7 @@
   },
   {
     "command": "workbench.action.showCommands",
-    "key": "shift shift"
+    "key": ""
   },
   {
     "command": "editor.action.selectHighlights",
