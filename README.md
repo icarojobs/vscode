@@ -18,7 +18,7 @@ setcode
 
 Enjoy it!
 
-### THE MOST IMPORTANTS SHORTCUTS
+### THE MOST IMPORTANT SHORTCUTS
  - Open 2 last recent files from history: `ctrl+shift+tab`
  - Open all recent files: `shift shift`
  - Open other project: `ctrl+q`
@@ -31,3 +31,8 @@ Enjoy it!
  - Open/Close Terminal: `cmd+t`
  - Clear terminal: `ctrl+l`
  - Create new terminal: `ctrl+cmd+t`
+
+### THE MOST IMPORTANT SNIPPETS
+ - `dect + tab` to declare strict types
+ - `tclass + tab` to create class structure
+ - `pubf + tab` to create public function structure
