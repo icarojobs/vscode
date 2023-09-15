@@ -1,6 +1,6 @@
 <?php
 
-$filename = './extensions/vs_code_extensions_list.txt';
+$filename = __DIR__ . '/vs_code_extensions_list.txt';
 $lines = [];
 
 $f = fopen($filename, 'r');
@@ -23,7 +23,7 @@ foreach ($lines as $extension) {
     $extension = trim($extension);
 
     echo PHP_EOL;
-    $output = shell_exec('code --install-extension '. $extension .' --force');
+    $output = shell_exec('code --install-extension ' . $extension . ' --force');
     echo $output . PHP_EOL;
 }
 
