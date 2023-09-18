@@ -9,14 +9,21 @@ I'm using ZSH in MacOS, so, in my case, I need change my .zshrc like this:
 ```
 export VSCODE_USER="$HOME/Library/Application\ Support/Code/User/"
 alias setcode="rm -rf .vscode && git clone https://github.com/icarojobs/vscode .vscode && cp .vscode/keybindings.json $VSCODE_USER && php .vscode/extensions/install.php"
+alias setenv="php .vscode/extensions/DotEnv.php"
 ```
 
 After that, save and reload your terminal using `source ~/.zshrc`
 
 ### APPLYING SETTINGS
-Open your project using `code .` then type in your terminal:
+After your project basic setup (composer, .env, etc), then open your project using `code .` then type in your terminal:
 ```bash
 setcode
+```
+
+### APPLYING DOCKER SAIL .ENV SETTINGS
+If your project was an `.env` file, you can use the follwing command to setup the main settings:
+```bash
+setenv
 ```
 
 ### INSTALLING TIO JOBS EXTENSIONS
