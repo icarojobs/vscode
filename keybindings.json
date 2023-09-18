@@ -1100,13 +1100,5 @@
   {
     "key": "ctrl+cmd+t",
     "command": "workbench.action.terminal.new"
-  },
-  {
-  "key": "enter",
-  "command": "type",
-  "args": {
-    "text": "\n"
-  },
-  "when": "textInputFocus"
-}
+  }
 ]
