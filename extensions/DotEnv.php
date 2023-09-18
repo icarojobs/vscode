@@ -20,7 +20,6 @@ class DotEnv
             'APP_URL=http://localhost',
             'DB_HOST=127.0.0.1',
             'DB_USERNAME=root',
-            'DB_PASSWORD=',
             'REDIS_HOST=127.0.0.1',
         ];
 
@@ -28,11 +27,14 @@ class DotEnv
             'APP_URL=http://laravel.test',
             'DB_HOST=mariadb',
             'DB_USERNAME=sail',
-            'DB_PASSWORD=password',
             'REDIS_HOST=redis',
         ];
 
         $newEnv = str_replace($find, $replacements, $envContents);
+
+        if (!str_contains($newEnv, 'DB_PASSWORD=password')) {
+            $newEnv = str_replace('DB_PASSWORD=', 'DB_PASSWORD=password', $newEnv);
+        }
 
         if (file_put_contents($envFilePath, $newEnv)) {
             echo "Environment variable on .env file was changed successfully!" . PHP_EOL;
