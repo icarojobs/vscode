@@ -5,7 +5,6 @@ parameters:
     level: 7
     paths:
         - app
-        - src
     checkOctaneCompatibility: true
     checkModelProperties: true
     checkMissingIterableValueType: false
