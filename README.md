@@ -38,7 +38,16 @@ php .vscode/extensions/install.php
 code --list-extensions >> .vscode/extensions/vs_code_extensions_list.txt
 ```
 
-Enjoy it!
+### INSTALLING CODE QUALITY TOOLS (SAIL)
+```bash
+sail composer require laravel/pint --dev && sail composer require nunomaduro/larastan:^2.0 --dev
+```
+
+### RUNNING CODE FORMATTER
+```bash
+sail bin pint -v
+sail bin phpstan analyse --memory-limit=2G
+```
 
 ### THE MOST IMPORTANT SHORTCUTS
  - Open 2 last recent files from history: `ctrl+shift+tab`
