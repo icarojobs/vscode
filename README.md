@@ -26,6 +26,11 @@ If your project was an `.env` file, you can use the follwing command to setup th
 setenv
 ```
 
+### APPLYING ALL SETTINGS
+```bash
+setcode && setenv
+```
+
 ### INSTALLING TIO JOBS EXTENSIONS
 To install my all extensions, just type this on terminal, in your root project folder (after `setcode` command):
 ```bash
@@ -52,6 +57,7 @@ sail bin phpstan analyse --memory-limit=2G
 ### THE MOST IMPORTANT SHORTCUTS
  - Open 2 last recent files from history: `ctrl+shift+tab`
  - Open all recent files: `shift shift`
+ - Format document: `ctrl+alt+l`
  - Open other project: `ctrl+q`
  - Find and replace: `ctrl+r`
  - Find in current file: `cmd+f`
