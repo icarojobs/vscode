@@ -2,7 +2,7 @@
 
 class DotEnv
 {
-    public function execute(): string
+    public function execute(): string|int
     {
         $envFilePath = __DIR__ . '/../../.env';
 
@@ -31,10 +31,12 @@ class DotEnv
         $newEnv = str_replace($find, $replacements, $envContents);
 
         if (file_put_contents($envFilePath, $newEnv)) {
-            return "Environment variable on .env file was changed successfully!" . PHP_EOL;
+            echo "Environment variable on .env file was changed successfully!" . PHP_EOL;
+            return 0;
         }
 
-        return "Error when trying to change the environment variables on .env file." . PHP_EOL;
+        echo "Error when trying to change the environment variables on .env file." . PHP_EOL;
+        return 1;
     }
 }
 
