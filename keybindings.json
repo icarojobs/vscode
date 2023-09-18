@@ -168,14 +168,24 @@
     "when": "emptyWorkspaceSupport"
   },
   {
-      "command": "acceptSelectedSuggestion",
-      "key": "[Enter]",
-      "when": "suggestWidgetVisible && textInputFocus"
+    "command": "acceptSelectedSuggestion",
+    "key": "[Enter]",
+    "when": "suggestWidgetVisible && textInputFocus"
   },
   {
-      "command": "acceptSelectedSuggestion",
-      "key": "[Enter]",
-      "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+    "command": "acceptSelectedSuggestion",
+    "key": "[Tab]",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "command": "acceptSelectedSuggestion",
+    "key": "[Enter]",
+    "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+  },
+  {
+    "command": "acceptSelectedSuggestion",
+    "key": "[Tab]",
+    "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
   },
   {
     "command": "editor.action.deleteLines",
