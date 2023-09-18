@@ -1,4 +1,6 @@
 {
+  "intelephense.environment.phpVersion": "@phpVersion",
+  "php.validate.executablePath": "@phpPath",
   "editor.acceptSuggestionOnEnter": "on",
   "window.zoomLevel": 2,
   "workbench.tree.indent": 24,
@@ -25,8 +27,6 @@
   "workbench.colorCustomizations": {
     "tree.indentGuidesStroke": "#008070"
   },
-  "intelephense.environment.phpVersion": "8.1.0",
-  "php.validate.executablePath": "/usr/bin/php",
   "gitlens.statusBar.enabled": false,
   "gitlens.hovers.enabled": false,
   "gitlens.blame.format": "${author|10} ${date}",

@@ -27,6 +27,8 @@ foreach ($lines as $extension) {
     echo $output . PHP_EOL;
 }
 
+echo shell_exec('php setup_php.php');
+
 echo "-----------------------------------------------------------" . PHP_EOL;
 echo "All vscode extensions was installed!" . PHP_EOL;
 echo "-----------------------------------------------------------" . PHP_EOL;
