@@ -2,7 +2,7 @@
 The Tio Jobs .vscode custom settings for MacOS
 
 ### SYSTEM REQUIREMENTS
- - PHP 8.x (out of Docker)
+ - PHP 8.x on your Operating System (out of Docker)
 
 ### CHANGING YOUR BASH
 I'm using ZSH in MacOS, so, in my case, I need change my .zshrc like this:
