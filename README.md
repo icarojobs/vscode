@@ -10,6 +10,9 @@ I'm using ZSH in MacOS, so, in my case, I need change my .zshrc like this:
 export VSCODE_USER="$HOME/Library/Application\ Support/Code/User/"
 alias setcode="rm -rf .vscode && git clone https://github.com/icarojobs/vscode .vscode && cp .vscode/keybindings.json $VSCODE_USER && php .vscode/extensions/install.php"
 alias setenv="php .vscode/extensions/DotEnv.php"
+
+alias stan="sail bin phpstan analyse --memory-limit=2G"
+alias pint="sail bin pint -v" 
 ```
 
 After that, save and reload your terminal using `source ~/.zshrc`
@@ -78,7 +81,6 @@ sail bin phpstan analyse --memory-limit=2G
 ### ALL .ZSHRC ALIASES OF TIO JOBS
 ```bash
 alias sail="$HOME/Scripts/sail"
-alias pint="$HOME/Scripts/pint"
 
 # git aliases
 alias gc="git checkout"
@@ -134,12 +136,19 @@ export VSCODE_USER="$HOME/Library/Application\ Support/Code/User/"
 alias setcode="rm -rf .vscode && git clone https://github.com/icarojobs/vscode .vscode && cp .vscode/keybindings.json $VSCODE_USER && php .vscode/extensions/install.php"
 alias setenv="php .vscode/extensions/DotEnv.php"
 
-# Android native settings
+alias stan="sail bin phpstan analyse --memory-limit=2G"
+alias pint="sail bin pint -v"
+
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/build-tools/33.0.1
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+# export PATH=$PATH:/Applications/XAMPP/bin
+export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
+autoload -U compinit; compinit
+autoload -U compinit; compinit
 
 # bun completions
 [ -s "/Users/tiojobs/.bun/_bun" ] && source "/Users/tiojobs/.bun/_bun"
