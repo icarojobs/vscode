@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . '/Setup.php';
+
 $filename = __DIR__ . '/vs_code_extensions_list.txt';
 $lines = [];
 
@@ -27,7 +29,8 @@ foreach ($lines as $extension) {
     echo $output . PHP_EOL;
 }
 
-echo shell_exec('php setup_php.php');
+$setup = new Setup;
+echo $setup->execute();
 
 echo "-----------------------------------------------------------" . PHP_EOL;
 echo "All vscode extensions was installed!" . PHP_EOL;
