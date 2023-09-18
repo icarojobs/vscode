@@ -6,6 +6,10 @@ class DotEnv
     {
         $envFilePath = __DIR__ . '/../../.env';
 
+        copy(__DIR__ . '/../dotfiles/bladeformatterrc', __DIR__ . '/../../.bladeformatterrc');
+        copy(__DIR__ . '/../dotfiles/phpstan.neon', __DIR__ . '/../../phpstan.neon');
+        copy(__DIR__ . '/../dotfiles/pint.json', __DIR__ . '/../../pint.json');
+
         if (!file_exists($envFilePath)) {
             return "Error: The .env file does not exists on your root folder." . PHP_EOL;
         }
