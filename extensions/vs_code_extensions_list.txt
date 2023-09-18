@@ -57,7 +57,6 @@ rust-lang.rust-analyzer
 shufo.vscode-blade-formatter
 smulyono.reveal
 SonarSource.sonarlint-vscode
-styled-components.vscode-styled-components
 trinm1709.dracula-theme-from-intellij
 VisualStudioExptTeam.intellicode-api-usage-examples
 VisualStudioExptTeam.vscodeintellicode
