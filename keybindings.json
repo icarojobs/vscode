@@ -168,14 +168,14 @@
     "when": "emptyWorkspaceSupport"
   },
   {
-    "command": "acceptSelectedSuggestion",
-    "key": "shift+ctrl+[Enter]",
-    "when": "suggestWidgetVisible && textInputFocus"
+      "command": "acceptSelectedSuggestion",
+      "key": "[Enter]",
+      "when": "suggestWidgetVisible && textInputFocus"
   },
   {
-    "command": "acceptSelectedSuggestion",
-    "key": "shift+ctrl+[Enter]",
-    "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+      "command": "acceptSelectedSuggestion",
+      "key": "[Enter]",
+      "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
   },
   {
     "command": "editor.action.deleteLines",
@@ -1100,5 +1100,13 @@
   {
     "key": "ctrl+cmd+t",
     "command": "workbench.action.terminal.new"
-  }
+  },
+  {
+  "key": "enter",
+  "command": "type",
+  "args": {
+    "text": "\n"
+  },
+  "when": "textInputFocus"
+}
 ]
