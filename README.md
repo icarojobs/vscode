@@ -10,6 +10,7 @@ I'm using ZSH in MacOS, so, in my case, I need change my .zshrc like this:
 export VSCODE_USER="$HOME/Library/Application\ Support/Code/User/"
 alias setcode="rm -rf .vscode && git clone https://github.com/icarojobs/vscode .vscode && cp .vscode/keybindings.json $VSCODE_USER && php .vscode/extensions/install.php"
 alias setenv="php .vscode/extensions/DotEnv.php"
+alias sethooks="sail bin captainhook install -f -s"
 
 alias stan="sail bin phpstan analyse --memory-limit=2G"
 alias pint="sail bin pint -v" 
@@ -29,9 +30,14 @@ If your project was an `.env` file, you can use the follwing command to setup th
 setenv
 ```
 
+### APPLYING CAPTAINHOOKS (PRECOMMIT, ETC)
+```bash
+sethooks
+```
+
 ### APPLYING ALL SETTINGS
 ```bash
-setcode && setenv
+setcode && setenv && sethooks
 ```
 
 ### INSTALLING TIO JOBS EXTENSIONS
@@ -48,13 +54,18 @@ code --list-extensions >> .vscode/extensions/vs_code_extensions_list.txt
 
 ### INSTALLING CODE QUALITY TOOLS (SAIL)
 ```bash
-sail composer require laravel/pint --dev && sail composer require nunomaduro/larastan:^2.0 --dev
+sail composer require laravel/pint --dev && sail composer require nunomaduro/larastan:^2.0 --dev && sail composer require --dev captainhook/captainhook
 ```
 
 ### RUNNING CODE FORMATTER
 ```bash
 sail bin pint -v
 sail bin phpstan analyse --memory-limit=2G
+```
+
+### GETTING LARASTAN/PHPSTAN IGNORED ERRORS
+```bash
+stan --generate-baseline
 ```
 
 ### THE MOST IMPORTANT SHORTCUTS
