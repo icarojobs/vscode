@@ -2,7 +2,12 @@
     "preset": "psr12",
     "notPath": [
         "app/Exceptions/Handler.php",
-        "app/Http/Kernel.php"
+        "app/Http/Kernel.php",
+        "app/Providers/AppServiceProvider.php",
+        "app/Providers/AuthServiceProvider.php",
+        "app/Providers/BroadcastServiceProvider.php",
+        "app/Providers/EventServiceProvider.php",
+        "app/Providers/RouteServiceProvider.php"
     ],
     "rules": {
         "declare_strict_types": true,
