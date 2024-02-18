@@ -1,5 +1,40 @@
 # VSCODE SETTINGS
-The Tio Jobs .vscode custom settings for MacOS
+The Tio Jobs .vscode custom settings for MacOS and Windows with WSL
+
+### PENDING MODIFICATIONS
+```bash
+# Falta fazer funcionar o comando 'install' para instalar as dependencias no windows....
+
+Local das configurações do VSCODE:
+C:\Users\tiojobs\AppData\Roaming\Code\User
+
+Atalho para configurações globais do VSCODE:
+%appdata%\Code\User
+
+C:\Users\tiojobs\AppData\Roaming\Code\User
+fazer um replace para
+/mnt/c/Users/tiojobs/AppData/Roaming/Code/User
+
+cp .vscode/keybindings.json /mnt/c/Users/tiojobs/AppData/Roaming/Code/User
+
+cp .vscode/keybindings.json $VSCODE_CONFIG_PATH
+-----------------------------------------------
+
+Passo 1:
+Adicione a seguinte variável de sistema:
+VSCODE_USER = %appdata%\Code\User
+
+Você precisa conseguir chegar nas configurações do VSCODE através do Executar > %VSCODE_USER%
+
+Passo 2:
+Exporte a seguinte variável no seu arquivo .zshrc ou .bashrc:
+export WINDOWS_USER="/mnt/c/Users/tiojobs"
+export VSCODE_CONFIG_PATH="$WINDOWS_USER/AppData/Roaming/Code/User"
+
+
+
+```
+
 
 ### SYSTEM REQUIREMENTS
  - PHP 8.x on your Operating System (out of Docker)
